@@ -1,0 +1,21 @@
+#twitter4j.properties
+#Fri Mar 02 11:14:23 BRT 2012
+
+#Franggo - Aplication Authentication
+oauth.consumerSecret=954CP6Pmge5uzEbDdD4r8HZCnQgeN0N1qWWFAz3k
+oauth.consumerKey=ZhCwAzmMVakQnDSzwgHCUw
+
+##Proxy##
+http://tools.rosinstrument.com/proxy/?rule1
+
+##Users##
+
+#figgo
+oauth.accessToken=313498093-KdpBcSoiMtuyP9ugZLGU2Q0J1RX0xPRvzrXFTRnk
+oauth.accessTokenSecret=RYKLkjY5vSTC6kwnm0IujBfQfb2tgoHdyHVwZHE
+#pedr0Guimaraes
+oauth.accessToken=228034602-YulTPT3UIPe7lIEysF9wRlbUSnFlcNYHDRHk3xIM
+oauth.accessTokenSecret=4A0nAeO3MjhFBbbG6DzaTDnWBjNvc7XV17VFOlbeUc
+#bandaHazamat
+oauth.accessToken=198376846-XknJYF5xrIxTd9juekC0CM5E15dOaSg3tBlC1wQK
+oauth.accessTokenSecret=lsMTk1LemuomJ4BlGGhyCYox3mrER46JCAvtGoyRp3I
