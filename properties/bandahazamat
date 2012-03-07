@@ -1,2 +1,6 @@
 oauth.accessToken=198376846-XknJYF5xrIxTd9juekC0CM5E15dOaSg3tBlC1wQK
 oauth.accessTokenSecret=lsMTk1LemuomJ4BlGGhyCYox3mrER46JCAvtGoyRp3I
+#Campaigns that the user is registered at, followed by the messages available for the user to send.
+#Ex.: GritoRockNE (2,4,6,54)
+
+

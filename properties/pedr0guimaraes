@@ -1,2 +1,6 @@
 oauth.accessToken=228034602-YulTPT3UIPe7lIEysF9wRlbUSnFlcNYHDRHk3xIM
 oauth.accessTokenSecret=4A0nAeO3MjhFBbbG6DzaTDnWBjNvc7XV17VFOlbeUc
+#Campaigns that the user is registered at, followed by the messages available for the user to send.
+#Format: %CampainName(<message number list divided by commas>)
+#Ex.: %GritoRockNE(2,4,6,54)
+%M.O.A.()

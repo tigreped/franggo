@@ -1,8 +1,8 @@
 package test;
 
-import controller.PropertiesManager;
 import twitter.GetAccessToken;
 import twitter.UpdateStatus;
+import util.PropertiesManager;
 
 public class main {
 
