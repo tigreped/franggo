@@ -10,7 +10,7 @@ import jdbc.factory.UserDaoFactory;
 import jdbc.jdbc.ResourceManager;
 
 /**
- * Manages users.
+ * Manages users and its operations.
  * 
  * @author Pedro Guimarães
  * @date 06/03/2012
@@ -78,4 +78,5 @@ public class UserManager {
 			u.printStackTrace();
 		}
 	}
+	 
 } //EOF

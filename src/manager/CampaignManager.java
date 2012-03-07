@@ -91,7 +91,7 @@ public class CampaignManager {
 		try {
 			campaigns = campaignDao
 					.findByDynamicSelect(
-							"SELECT * FROM CAMPAIGN WHERE BEGIN <= THEN '?' AND END >= '?'",
+							"SELECT * FROM Franggo.CAMPAIGN WHERE BEGIN <= ? AND END >= ?",
 							args);
 		} catch (CampaignDaoException e) {
 			e.printStackTrace();
