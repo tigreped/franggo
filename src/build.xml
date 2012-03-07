@@ -1,0 +1,9 @@
+<project default="build">
+  <target name="build">
+    <mkdir dir="classes" />
+    <javac srcdir="src" destdir="classes">
+      <classpath path="/home/pedro/.FireStormDAO-4.0.1/jars/log4j-1.2.8.jar" />
+    </javac>
+    <jar jarfile="Franggo.jar" basedir="classes" />
+  </target>
+</project>
