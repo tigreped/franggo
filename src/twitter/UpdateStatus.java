@@ -27,7 +27,7 @@ public class UpdateStatus {
 		try {
 			Twitter twitter = new TwitterFactory().getInstance();
 			Status status = twitter.updateStatus(msg);
-			System.out.println("Successfully updated the status to: \""
+			System.out.println("Status atualizado com sucesso para: \""
 					+ status.getText() + "\"");
 		} catch (TwitterException te) {
 			te.printStackTrace();

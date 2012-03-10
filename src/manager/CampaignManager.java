@@ -6,6 +6,7 @@ import java.sql.Date;
 import jdbc.dao.CampaignDao;
 import jdbc.dto.Campaign;
 import jdbc.dto.CampaignPk;
+import jdbc.dto.Message;
 import jdbc.exceptions.CampaignDaoException;
 import jdbc.factory.CampaignDaoFactory;
 import jdbc.jdbc.ResourceManager;
@@ -155,6 +156,13 @@ public class CampaignManager {
 			campaignDao.delete(new CampaignPk(campaign.getId()));
 		} catch (CampaignDaoException e) {
 			e.printStackTrace();
+		}
+	}
+	
+	public static void updateCampaign(String campaignName) {
+		Campaign campaign = getCampaignByName(campaignName);
+		Message messages[] = MessageManager.getMessagesByCampaign(campaignName);
+		CampaignUsers campaignUsers[] = UserManager.getCampaignUsers(accountId, campaign.getId());	
 		}
 	}
 }

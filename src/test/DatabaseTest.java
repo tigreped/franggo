@@ -1,17 +1,8 @@
 package test;
 
-import java.sql.Date;
-import java.sql.SQLException;
-
 import manager.CampaignManager;
+import manager.MessageManager;
 import manager.UserManager;
-
-import jdbc.dao.CampaignDao;
-import jdbc.dto.Campaign;
-import jdbc.dto.CampaignPk;
-import jdbc.exceptions.CampaignDaoException;
-import jdbc.factory.CampaignDaoFactory;
-import jdbc.jdbc.ResourceManager;
 
 public class DatabaseTest {
 
@@ -35,9 +26,13 @@ public class DatabaseTest {
 				"Campanha pela consciência ecológica nos Gritos Rock",
 				"2012-01-14", "2012-03-15");
 		CampaignManager.addCampaign("Teste", "", "0000-01-01", "3000-01-01");
-		*/
+
 		Campaign campaigns[] = CampaignManager.getCampaignsByPeriod("2012-05-01"); 
 		for (int i = 0; i < campaigns.length ; i++ )
 			System.out.println(campaigns[i].getName());
+		*/
+		int userId = UserManager.getUser("pedr0guimaraes").getId();
+		int campaignId = CampaignManager.getCampaignByName("Teste").getId();
+		MessageManager.addMessage("Daqui a pouco, tocar guitarra com Johnny Boy!", userId, campaignId);
 	}
 }
